@@ -187,9 +187,45 @@ nav.navbar {
     margin: 0 10px 0 20px;
   }
 
-  #bar i {
-    font-size: 20px;
-    cursor: pointer;
+  #bar span {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #000000;
+  }
+
+  #bar.active span {
+    background: transparent;
+  }
+
+  #bar span::before,
+  #bar span::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+  }
+
+  #bar span::before {
+    transform: translateY(-6px);
+  }
+
+  #bar.active span::before {
+    background: #ff0000;
+    transform: rotate(45deg);
+  }
+
+  #bar span::after {
+    transform: translateY(6px);
+  }
+
+  #bar.active span::after {
+    background: #ff0000;
+    transform: rotate(135deg);
   }
 
   .language-selector select {
