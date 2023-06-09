@@ -185,6 +185,7 @@ nav.navbar {
 
   #bar {
     margin: 0 10px 0 20px;
+    cursor: pointer;
   }
 
   #bar span {
