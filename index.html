@@ -12,12 +12,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
+    <!-- Owl Carousel Slider CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
     <!-- Header Part HTML Start -->
@@ -26,50 +29,41 @@
       <!-- Navigation Section HTML Start -->
 
       <section id="Header">
-        <nav class="navbar navbar-expand-xl">
+        <nav class="navbar">
           <div class="container">
-            <a class="logo" href="index.html"
-              ><img src="assets/images/logo.svg" alt="logo"
-            /></a>
-            <button
-              class="navbar-toggler collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+            <div
+              class="navbar-container w-100 d-flex justify-content-between align-items-center"
             >
-              <span class="toggler-icon top-bar"></span>
-              <span class="toggler-icon middle-bar"></span>
-              <span class="toggler-icon bottom-bar"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav pl-md-5 ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact us</a>
-                </li>
-                <li class="nav-item">
-                  <div class="search-form-wrapper">
-                    <form>
-                      <div class="search-form">
-                        <input type="text" placeholder="Search breed..." />
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                      </div>
-                    </form>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <div class="language-selector">
-                    <select>
-                      <option value="ENG">ENG</option>
-                      <option value="BAN">BAN</option>
-                    </select>
-                  </div>
-                </li>
+              <div class="logo">
+                <img src="assets/images/logo.svg" alt="logo" />
+              </div>
+              <ul class="d-flex align-items-center">
+                <div class="nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="search-form-wrapper">
+                      <form>
+                        <div class="search-form">
+                          <input type="text" placeholder="Search breed..." />
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="language-selector">
+                      <select>
+                        <option value="ENG">ENG</option>
+                        <option value="BAN">BAN</option>
+                      </select>
+                    </div>
+                  </li>
+                </div>
                 <li class="nav-item">
                   <div class="user-profile">
                     <a href="#"
@@ -77,6 +71,9 @@
                     /></a>
                   </div>
                 </li>
+                <div id="bar">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
               </ul>
             </div>
           </div>
@@ -229,9 +226,355 @@
       </section>
 
       <!-- Find Pet Section HTML End -->
+
+      <!-- Pet Selling Section HTML Start -->
+
+      <section id="Pet-selling">
+        <div class="pet-selling-wrapper">
+          <div class="container">
+            <div class="pet-selling-top">
+              <h2>VIP Pet Selling</h2>
+            </div>
+            <div class="pet-selling-slider owl-carousel owl-theme">
+              <div class="pet-selling-slide item">
+                <div class="pet-slide-img position-relative">
+                  <img
+                    src="assets/images/pet-selling-slide-img1.png"
+                    alt="pet-selling-slide-img1"
+                  />
+                  <div class="vip-tag">
+                    <span>VIP</span>
+                  </div>
+                </div>
+                <div class="pet-slide-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5>Cute Dog <span>(Male)</span></h5>
+                    <h5>$899.0</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p>1 years 3 months</p>
+                    <div class="buy-now-btn">
+                      <a href="#">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pet-selling-slide item">
+                <div class="pet-slide-img position-relative">
+                  <img
+                    src="assets/images/pet-selling-slide-img2.png"
+                    alt="pet-selling-slide-img2"
+                  />
+                  <div class="vip-tag">
+                    <span>VIP</span>
+                  </div>
+                </div>
+                <div class="pet-slide-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5>Cute Dog <span>(Male)</span></h5>
+                    <h5>$899.0</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p>1 years 3 months</p>
+                    <div class="buy-now-btn">
+                      <a href="#">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pet-selling-slide item">
+                <div class="pet-slide-img position-relative">
+                  <img
+                    src="assets/images/pet-selling-slide-img1.png"
+                    alt="pet-selling-slide-img1"
+                  />
+                  <div class="vip-tag">
+                    <span>VIP</span>
+                  </div>
+                </div>
+                <div class="pet-slide-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5>Cute Dog <span>(Male)</span></h5>
+                    <h5>$899.0</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p>1 years 3 months</p>
+                    <div class="buy-now-btn">
+                      <a href="#">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pet-selling-slide item">
+                <div class="pet-slide-img position-relative">
+                  <img
+                    src="assets/images/pet-selling-slide-img3.png"
+                    alt="pet-selling-slide-img3"
+                  />
+                  <div class="vip-tag">
+                    <span>VIP</span>
+                  </div>
+                </div>
+                <div class="pet-slide-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5>Cute Dog <span>(Male)</span></h5>
+                    <h5>$899.0</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p>1 years 3 months</p>
+                    <div class="buy-now-btn">
+                      <a href="#">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pet Selling Section HTML End -->
+
+      <!-- Pet Selling Section HTML Start -->
+
+      <section id="Pet-selling">
+        <div class="pet-selling-wrapper">
+          <div class="container">
+            <div class="pet-selling-top">
+              <h2>Latest Pet Selling</h2>
+            </div>
+            <div class="pet-selling-slider owl-carousel owl-theme">
+              <div class="pet-selling-slide item">
+                <div class="pet-slide-img position-relative">
+                  <img
+                    src="assets/images/pet-selling-slide-img2.png"
+                    alt="pet-selling-slide-2"
+                  />
+                </div>
+                <div class="pet-slide-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5>Cute Dog <span>(Male)</span></h5>
+                    <h5>$899.0</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p>1 years 3 months</p>
+                    <div class="buy-now-btn">
+                      <a href="#">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pet-selling-slide item">
+                <div class="pet-slide-img position-relative">
+                  <img
+                    src="assets/images/pet-selling-slide-img1.png"
+                    alt="pet-selling-slide-img1"
+                  />
+                  <div class="vip-tag">
+                    <span>VIP</span>
+                  </div>
+                </div>
+                <div class="pet-slide-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5>Cute Dog <span>(Male)</span></h5>
+                    <h5>$899.0</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p>1 years 3 months</p>
+                    <div class="buy-now-btn">
+                      <a href="#">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pet-selling-slide item">
+                <div class="pet-slide-img position-relative">
+                  <img
+                    src="assets/images/pet-selling-slide-img2.png"
+                    alt="pet-selling-slide-img2"
+                  />
+                </div>
+                <div class="pet-slide-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5>Cute Dog <span>(Male)</span></h5>
+                    <h5>$899.0</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p>1 years 3 months</p>
+                    <div class="buy-now-btn">
+                      <a href="#">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pet-selling-slide item">
+                <div class="pet-slide-img position-relative">
+                  <img
+                    src="assets/images/pet-selling-slide-img3.png"
+                    alt="pet-selling-slide-img3"
+                  />
+                </div>
+                <div class="pet-slide-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5>Cute Dog <span>(Male)</span></h5>
+                    <h5>$899.0</h5>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p>1 years 3 months</p>
+                    <div class="buy-now-btn">
+                      <a href="#">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pet Selling Section HTML End -->
+
+      <!-- Upload Post Section HTML Start -->
+
+      <section id="Upload-post">
+        <div class="upload-post-wrapper">
+          <div class="container">
+            <div class="upload-post-container">
+              <div class="row align-items-center">
+                <div class="col-lg-7">
+                  <div class="upload-post-img">
+                    <img
+                      src="assets/images/upload-post-img.png"
+                      alt="upload-post-img"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-5 pt-5 pt-lg-0">
+                  <div class="upload-post-content">
+                    <h3>Upload Post</h3>
+                    <div class="upload-post-form-container">
+                      <form>
+                        <div class="upload-post-form">
+                          <div class="post-form-field">
+                            <select>
+                              <option value="Select Animal">
+                                Select Animal
+                              </option>
+                              <option value="Select Animal2">
+                                Select Animal2
+                              </option>
+                            </select>
+                          </div>
+                          <div class="post-form-field">
+                            <input type="text" placeholder="Breed" />
+                          </div>
+                          <div class="post-form-field">
+                            <select>
+                              <option value="Select Post Type">
+                                Select Post Type
+                              </option>
+                              <option value="Select Post Type2">
+                                Select Post Type2
+                              </option>
+                            </select>
+                          </div>
+                          <div class="post-submit-btn">
+                            <input type="submit" value="Post Now" />
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Upload Post Section HTML End -->
     </main>
 
     <!-- Main Part HTML End -->
+
+    <!-- Footer Part HTML Start -->
+
+    <footer id="Footer">
+      <div class="footer-wrapper">
+        <div class="container">
+          <div
+            class="footer-container d-lg-flex justify-content-between align-items-center"
+          >
+            <div class="footer-logo">
+              <img src="assets/images/footer-logo.svg" alt="footer-logo" />
+            </div>
+            <div class="footer-social pt-4 pt-lg-0">
+              <ul class="d-flex justify-content-center align-items-center">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-contact pt-4 pt-lg-0">
+              <a href="#">Contact</a>
+            </div>
+          </div>
+          <hr />
+          <div class="footer-copyright">
+            <p>Copyright 2023 @Pender</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer Part HTML End -->
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JavaScript -->
+    <script src="assets/js/owl.carousel.min.js"></script>
 
     <!-- Bootstrap JavaScript -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
